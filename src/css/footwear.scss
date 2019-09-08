@@ -1,0 +1,89 @@
+.footwear {
+    box-sizing: border-box;
+
+    .footwear-sections {
+        display: flex;
+        // width: 1000px;
+        justify-content: space-between;
+        margin: 20px;
+        overflow-x: hidden;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        .footwear-section {
+            color: white;
+            margin: 10px;
+            color: rgba(0, 0, 0, 0.75);
+            letter-spacing: 0.3px;
+            min-width: 400px;
+        }
+
+        .footwear-section--title1 {
+            margin: 0;
+            margin-top: 1em;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .footwear-section--title2 {
+            margin: 0;
+            margin-top: 0.5em;
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+
+        .footwear-section--image {
+            height: 400px;
+
+            &.image1 {
+                background: url('../img/footwear1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &.image2 {
+                background: url('../img/footwear2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &.image3 {
+                background: url('../img/footwear3.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        img {
+            display: none;
+        }
+
+        @media (min-width:758px) {
+            margin-top: 3em;
+            .footwear-section--image {
+                display: none;
+            }
+
+            img {
+                display: inline-block;
+                width: 300px;
+            }
+
+            .footwear-section {
+                min-width: unset;
+            }
+        }
+
+        @media (min-width:1000px) {
+            margin-top: 5em;
+            img {
+                display: inline-block;
+                max-width: unset;
+                width: 400px;
+            }
+        }
+    }
+}

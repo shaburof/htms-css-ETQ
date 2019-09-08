@@ -1,0 +1,47 @@
+.collections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .collections__col {
+        color: rgba(0, 0, 0, 0.75);
+        letter-spacing: 0.3px;
+        // width: 100vw;
+        // height: 400px;
+        margin: 2em 1em;
+
+        .collections__col--title1 {
+            margin: 0;
+            margin-top: 1em;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .collections__col--title2 {
+            margin: 0;
+            margin-top: 0.5em;
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        margin: 2em 1em;
+
+        .collections__col {
+            flex-grow: 1;
+        }
+
+        img {
+            height: 100%;
+        }
+
+
+    }
+}

@@ -1,0 +1,30 @@
+@media (min-width:1000px) {
+    #scroll-bar-style::-webkit-scrollbar {
+        width: 6px;
+        // background-color: rgba(231, 7, 7, 0.945);
+    }
+
+    #scroll-bar-style::-webkit-scrollbar-thumb {
+        background-color: #BDBBBC;
+        border-radius: 15px;
+    }
+
+    #scroll-bar-style::-webkit-scrollbar-track {
+        background-color: white;
+        // background-color: #BDBBBC;
+    }
+
+
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../font/Graphik-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../font/Graphik-Medium.woff") format("woff");
+    font-weight: 500;
+}
